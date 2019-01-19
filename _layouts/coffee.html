@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css?family=Aleo:300,400|Lato:300,400|Open+Sans:300,400|Poiret+One|Quicksand:300,400|Raleway:300,400" rel="stylesheet">
 
-    <link rel="stylesheet" href=""{{ "/assets/css/main.css" | relative_url }}"">
-    <link rel="stylesheet" href="{{ "/assets/css/header.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/footer.css" | relative_url }}">
+    <link rel="stylesheet" href="/gitme/assets/css/main.css">
+    <link rel="stylesheet" href="/gitme/assets/css/header.css">
+    <link rel="stylesheet" href="/gitme/assets/css/footer.css">
 
     <style type="text/css">
         {{ page.style }}
@@ -30,7 +30,7 @@
     <div class="summ" style="width: calc({{page.aspw}} * 32vw); padding-bottom: calc({{page.asph}} * 18vw); ">
     <div
 
-         {% if page.img %}style="background-image: url({{ "/assets/images/{{ page.img }}" | relative_url }}); padding: 1vw;"
+         {% if page.img %}style="background-image: url(/gitme/assets/images/{{ page.img }}); padding: 1vw;"
          {% endif %}>  {{page.description}}</div></div>
 
 
