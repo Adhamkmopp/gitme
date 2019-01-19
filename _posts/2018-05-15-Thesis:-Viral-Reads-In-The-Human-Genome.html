@@ -1,0 +1,107 @@
+---
+layout: coffee
+title:  "Master's Thesis: The Human Virome in The 1000 Genomes Project"
+date:   2018-05-13 21:55:13 +0200
+categories: projects
+permalink: :categories/:title
+img: viral.png
+aspw: 2
+asph: 1.75
+style: |
+  .summary {
+  display:inline;
+  background: rgba(0, 0, 0, 0.8);
+  font-size:1.25vw;
+  color:white;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.75vw;
+  left: 0.2vw;
+  }
+  .summary::first-letter {
+  font-family: 'Poiret One', cursive;
+  color: darkorange;
+  float: left;
+  font-size: 4vw;
+  margin: 0 .2em 0 0;
+  }
+description: "<p class=\"summary\" style=\"display: inline-block;\">This was my master's thesis at the University of Copenhagen, completed towards the end of 2018
+    under the supervision of Dr.Anders Albrechtsen.
+    The initial plan was to follow the methods published by the Craig Venter Institute
+to build a profile of the human virome as found in unmapped reads of publically available data, namely from the 1000 genomes project.
+If it had been fruitful, it could have opened the door to much greater things; giving a newfound importance to a ton of otherwise useless unmappable reads.
+    Alot of which is already publically available and just sitting there, and more and more of it piling up with every sequencing run.</p>
+<br> <p class=\"summary\"  style=\"text-align: right; font-size:0.75vw;\"> *background is video capture of ebola virus </p>"
+---
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+
+
+<p class="description">What the thesis ended up being was  an exploration on the failures of heurestic methods in doing this kind of work. Not only for this specific
+    task and data, but it raises skepticism regarding the work done at JCVI as well. The results cannnot be trusted without validation, and
+    there needs to be an accurate, unified method that work on all levels of data (blood/LCL, high depth/low depth, etc.). Personally, this work
+    proved to me the need for mathematical rigour every step of the way; agreed-upon conventions and arbitrary measures should always be taken
+    with a heavy grain of salt, and only really useful as a starting point, not as an end in itself, especially when it concerns heurestic methods.
+
+    <br>  <br>
+Below is the introduction and link to the full paper:
+    <br>  <br>
+
+"Over the past several years interest and active research in viral metagenomics has been steadily
+increasing, and not without due cause; in any given environmental habitat, including the human microbiome,
+at least 1031 viral particles exit at any point in time. Humans in particular carry a 10-100
+fold viral particles to human cells, including the gastrointestinal tract where extensive research on
+the bacterial microbiome has already been under way for more than a decade [64]. This may in fact
+be less innocuous that it sounds; firstly due to immune systems’ response to viral infections, and
+its role in regulating transkingdom interactions within a microbiome through immunomodulation.
+Viral immunomodulation has been implicated as a significant contributing factor in chronic autoimmune
+diseases (lupus, rheumatoid arthritis, multiple sclerosis and asthma and several more). It has
+also been shown to confer beneficial effects in the form of protection against bacterial infections
+in the gastrointestinal tract (as shown in mice) and a heightened antiviral immunity and superior
+response such as the case in young human adults carrying herpesvirus[9]. On an individual level,
+there are also widely disparate variations, even among immediate relatives [32] [42] .Furthermore,
+the heavily underestimated diversity of viruses, the number of novel viruses being continuously
+discovered within the human body, as well as the shortcomings of fully sequenced viral genomes
+with ”Hallmark” universal genes remain open issues in profiling the human virome, and a challenge
+in taxonomy in general [48]. Efforts have been made to probe DNA viral diversity within humans
+however, and a recent study found 3,761 novel DNA viral sequences circulating as cell-free circular
+DNA in 1,351 blood samples [22].
+    <br>  <br>
+The aforementioned not only highlights the significance and prevalence of the human virome
+within the body, but also the difficulty in fully characterizing what would be a typical virome
+of a healthy individual. Towards that end, a recent metagenomics study (JCVI) with a focus on
+homology-dependent methods rather than novel discovery, explored the unmapped sequences of
+8,420 deep sequenced individuals [53] in an attempt to profile a normal blood phenotype. Sequences
+were obtained from whole genome of sequencing of blood, and the study found 94 viruses (19
+human DNA viruses with the rest being concluded as reagent contaminations) in 42% of all -disease
+free- individuals. The researchers also found significant contributions of age, sex and ancestry in
+viral infections [34].   <br>
+
+    <br>Aim:Our goal is to apply similar methods of the latter study on the freely available 1000 Genomes[4]
+to capture a profile of the human virome. We futher aim to conduct Genome-Wide Analysis (GWA)
+on the most prevalent viruses found to test for associated loci with viral abundances. There are
+several marked differences in contrast with the methodology of JCVI study with this study; firstly,
+samples from the 1000 Genomes Project are obtained from cell cultures (lymphoblastoid cell lines)
+and are of low-coverage (4x – 8x).Furthermore, because the samples are publicly available, health
+related records including age and gender of the indivudal was not recorded. Individuals sequenced
+in the 1000 Genomes Project self-reported as ”healthy” however. These factors combined would
+lead us to expect significant differences between the results of this study and the previous one, in
+particular lower viral abundances, but we hope to nonetheless ascertain the validty of the method
+within a low-computational setting. To add another layer of complexity and to exclude atleast one
+source of variance, the same methods were applied on low-coverage (11x) whole-exome sequence
+data of 2,000 Danish individuals.   <br>
+    
+  <hr>  
+    Grab the full project report here: <a href="https://adhamkmopp.github.io/gitme/assets/final.pdf">
+    https://github.com/Adhamkmopp/Thesis </a></p>
+
+
+
+</body>
+</html>

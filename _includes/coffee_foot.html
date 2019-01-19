@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <style>
+
+    .git {
+      background-image: url({{site.baseurl}}/assets/images/git.png);
+      position: relative;
+      display: inline-block;
+      background-size: contain;
+      width: 2.5vw;
+      height: 2.5vw;
+
+
+    }
+  </style>
+</head>
+
+<body>
+
+<div style="width:100%;text-align:center;">
+<a class="git" href="https://github.com/Adhamkmopp"></a>
+</div>
+<br>
+
+<div class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">
+            {%- if site.author -%}
+            {{ site.author | escape }}
+            {%- else -%}
+            {{ site.title | escape }}
+            {%- endif -%}
+          </li>
+          {%- if site.email -%}
+          <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li><a href="https://www.linkedin.com/in/akmopp/">linkedin/akmopp</a></li>
+          {%- endif -%}
+        </ul>
+      </div>
+
+
+
+      <div class="footer-col footer-col-3">
+        <p>{{- site.description | escape -}}</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+</body>
+</html>

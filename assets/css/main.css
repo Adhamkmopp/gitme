@@ -1,0 +1,111 @@
+
+body{
+    margin: 0 20vw;
+    padding: 0;
+    background: #FEFEF5;
+}
+.content{
+    font-family: 'Source Serif Pro', serif;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1vw;
+    margin: 0 -10vw;
+}
+.title{
+    font-family: 'Source Serif Pro', serif;
+    font-variant: small-caps;
+    text-align: center;
+    padding: 0 0;
+    margin: 0 0;
+    font-size:3vw;
+
+
+}
+
+.blogposts {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.post{
+    display: block;
+    margin: 0 0.1vw;
+    padding: 0.1vw 0.1vw;
+    transition: all .3s ease-out;
+    height: 10vw;
+    width: 20vw;
+    font-size: 0.7vw;
+
+}
+.post:hover{
+    transform: translate(0px,-3px);
+    opacity: 0.5;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 3vw;
+    text-align: center;
+    font-family: 'Aleo', serif;
+}
+
+div > span {
+    box-decoration-break: clone;
+    letter-spacing: -1px;
+}
+
+
+.summ{
+    position: relative;
+    border: 1px solid black;
+    height:auto;
+    margin: auto;
+    -webkit-transition: all 0.5s ease-in-out;
+
+}
+
+.summ > div {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0; bottom: 0; left:0; right:0;
+}
+
+
+.blink {
+    animation: blinker 1s ease-out infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.description {
+    display:inline;
+    background: rgba(245, 255, 250, 0.7);
+    font-size:1vw;
+    color:black;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    line-height: 2vw;
+    left: 0.2vw;
+}
+.description::first-letter {
+    font-family: 'Poiret One', cursive;
+    color: darkorange;
+    float: left;
+    font-size: 4vw;
+    margin: 0 .2em 0 0;
+}
+
+
+
+
+
+

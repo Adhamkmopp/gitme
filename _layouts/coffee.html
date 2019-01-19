@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Aleo:300,400|Lato:300,400|Open+Sans:300,400|Poiret+One|Quicksand:300,400|Raleway:300,400" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/header.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/footer.css">
+
+    <style type="text/css">
+        {{ page.style }}
+    </style>
+
+
+</head>
+<body>
+
+
+<span class="header">
+{% include coffee_head.html %}
+</span>
+<br>
+<p class="title">{{page.title}}</p>
+
+{% if page.description != null %}
+<hr style="width: 55%">
+
+    <div class="summ" style="width: calc({{page.aspw}} * 32vw); padding-bottom: calc({{page.asph}} * 18vw); ">
+    <div
+         {% if page.img %}style="background-image: url({{site.baseurl}}/assets/images/{{ page.img }}); padding: 1vw;"
+         {% endif %}>  {{page.description}}</div></div>
+
+
+<hr style="width: 55%">
+{% endif %}
+<div class="content" >
+    {{ content }}
+</div>
+
+<br>
+<span class="footer">
+{% include coffee_foot.html %}
+</span>
+<br>
+
+
+</body>
+</html>

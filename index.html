@@ -1,0 +1,50 @@
+---
+layout: coffee
+title: "Welcome"
+date: 2018-05-13 21:55:13 +0200
+
+img: index.jpg
+aspw: 2
+asph: 1
+style: |
+  div > span {
+  background: rgba(0, 0, 0, 0.7);
+  font-size:1.55vw;
+  color:white;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 2vw;
+  }
+description: "<span> This site is relatively new and made by myself, an amateur, but built with care and purpose.</span><br>
+<span style=\"margin: 5vw\">These are my projects, old and new.</span>
+<br> <span style=\"margin: 2.5vw\"> <span class=\"blink\"> > </span>All this trash is mine and mine alone.</span>"
+width: 50%
+---
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+<div class="blogposts" font-family="Slabo 27px, serif">
+    {% for post in site.posts %}
+
+    <div class="post">
+        <h3 ><a href="/{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h3>
+        {{ post.description | strip_html | truncatewords: 50 }}
+        <p style="position: relative; bottom: 0"><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> .<mark>/{{ post.categories }}/</mark> </small></p>
+    </div>
+
+    {% endfor %}
+
+</div>
+
+
+
+</body>
+</html>
+
+
+
+
