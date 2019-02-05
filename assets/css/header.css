@@ -1,10 +1,11 @@
 nav ul{
     position: relative;
-    bottom: 2vw;
+    bottom: 1vw;
     margin: 0 0px;
     padding: 0;
     list-style: none;
     float: left;
+    font-size: 1vw;
 }
 
 nav li{
@@ -40,7 +41,7 @@ nav hr {
 }
 
 body{
-    font-size: 2vw;
+    font-size: 1vw;
 }
 
 @media screen
