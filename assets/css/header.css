@@ -39,6 +39,9 @@ nav hr {
     border-color: black;
 }
 
+body{
+    font-size: 2vw;
+}
 .button-wrapper {
     display: inline-block;
     padding: 0 0.5vw;
