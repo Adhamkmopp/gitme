@@ -42,6 +42,16 @@ nav hr {
 body{
     font-size: 2vw;
 }
+
+@media screen
+and (device-width: 360px)
+and (device-height: 640px)
+and (-webkit-device-pixel-ratio: 3) {
+    body{
+        font-size: 1vw;
+    }
+}
+
 .button-wrapper {
     display: inline-block;
     padding: 0 0.5vw;
