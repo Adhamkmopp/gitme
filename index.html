@@ -33,7 +33,7 @@ width: 50%
     <div class="post">
         <h3 ><a href="/gitme/{{ post.url }}">{{ post.title }}</a></h3>
         {{ post.description | strip_html | truncatewords: 50 }}
-        <p style="position: relative; bottom: 0"><small><strong>{{ page.date | date: "%B %e, %Y" }}</strong> .<mark>/{{ post.categories }}/</mark> </small></p>
+        <p style="position: relative; bottom: 0"><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> .<mark>/{{ post.categories }}/</mark> </small></p>
     </div>
 
     {% endfor %}
