@@ -31,7 +31,7 @@ width: 50%
     {% for post in site.posts %}
 
     <div class="post">
-        <h3 ><a href="/gitme/{{ post.url }}">{{ post.title }}</a></h3>
+        <h3 style="font-family: 'Quicksand', sans-serif;"><a href="/gitme/{{ post.url }}">{{ post.title }}</a></h3>
         {{ post.description | strip_html | truncatewords: 50 }}
         <p style="position: relative; bottom: 0"><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> .<mark>/{{ post.categories }}/</mark> </small></p>
     </div>
