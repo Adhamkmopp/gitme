@@ -53,6 +53,11 @@ h2 {
     font-family: 'Aleo', serif;
 }
 
+
+h3 {
+    font-family: 'Aleo', serif;
+}
+
 div > span {
     box-decoration-break: clone;
     letter-spacing: -1px;
