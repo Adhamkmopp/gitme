@@ -27,6 +27,32 @@ style: |
 description: "<p class=\"summary\" style=\"display: inline-block; font-style: italic;\">\"Determining which combinations of transformations to apply is
 indeed part of the black art of writing fast code\". This was a direct quote from \"Computer System's: A Programmer's Perspective\",
 543 pages in.</p>
-<br> <p class=\"summary\"  style=\"text-align: right; font-size:0.75vw;\"> *background is my trash drawing summarizing the chapter explaining CPUs from the bottom up </p>"
+<br> <p class=\"summary\"  style=\"text-align: right; font-size:0.75vw;\"> *background is my trash schematic summarizing the chapter explaining CPUs from the bottom up </p>"
 ---
 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+
+<p class="description"></p>Standing at over 900 pages this book is the most dense book I have ever invested time and effort into, and well worth it too! 
+The topics covered computer sytems (big surprise) from the ground up; beginning with numerical binary representation and machine level code,
+going through CPU design and the basics of concurrency, the virtual memory and cache hierarchies, all the way up the kernel, 
+exception/ signal handling and ending with network programming and concurrent programming.
+
+Each topic is encapsulated within the context of coding efficient programs or aiming at being a better programming in general; modern CPU 
+architecture is discussed within the context of exploiting parallelism for example, while the virtual memory and memory architecture is 
+discussed within the context of exploiting locality instead and writing cache-friendly code. The topics of linking and the ELF structure of object files
+are given in detail to sidestep common linking errors and to master machine level debugging respectively. The practice problems and 
+CMU's own publically available labs emphasis programming in C, and more specifically, pointers and how to properly appeciate them. It's great. All of it.
+
+What I appreciate the most is breaking above the layman level of understanding when it comes to programming; I hope to no longer 
+be forced to seek help in understanding a topic and settling for a reply like "Concurrency is two lines of customers ordering from a s
+ingle cashier", or other weird analogies involving passports or phonelines or even Rob Pike's own gofers. Just knowing that threads
+are logical control flows running within a single process with their own context is enough to make all the above seem like almost gibberish.
+
+Some notes, practice problem solutions and the labs can be found here:<a href="https://github.com/Adhamkmopp/cmu-comp-systems">https://github.com/Adhamkmopp/cmu-comp-systems</a></p> 
+</body>
+</html>
