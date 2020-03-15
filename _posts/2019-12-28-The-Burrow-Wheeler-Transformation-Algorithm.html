@@ -37,22 +37,17 @@ indeed part of the black art of writing fast code\". This was a direct quote fro
 </head>
 <body>
 
-<p class="description">Standing at over 900 pages this book is the most dense book I have ever invested time and effort into, and well worth it too! 
-The topics covered computer sytems (big surprise) from the ground up; beginning with numerical binary representation and machine level code,
-going through CPU design and the basics of concurrency, the virtual memory and cache hierarchies, all the way up the kernel, 
-exception/ signal handling and ending with network programming and concurrent programming.
+<p class="description">At the heart of the Burrows--Wheeler transformation is any basic string sorting algorithm. This is the implementation of two different 
+  string sorting algoirthms, plus one variation to pin down the most efficient one of the three; a least signficant digit suffix sort (LSD), a recursive most signficant digit suffix sort (MSD), 
+  and a multi--threaded version of the latter. All three share auxilary arrays for implementing a simple count sort. MSD differs from LSD in that it is recursive,
+  and adjacent recursive calls at each level of recursion are indepedent of one another, allowing for multithreading.
 <br>
-Each topic is encapsulated within the context of coding efficient programs or aiming at being a better programming in general; modern CPU 
-architecture is discussed within the context of exploiting parallelism for example, while the virtual memory and memory architecture is 
-discussed within the context of exploiting locality instead and writing cache-friendly code. The topics of linking and the ELF structure of object files
-are given in detail to sidestep common linking errors and to master machine level debugging respectively. The practice problems and 
-CMU's own publically available labs emphasis programming in C, and more specifically, pointers and how to properly appeciate them. It's great. All of it.
+In theory, the recursive MSD algorithm is faster than LSD, and the multithreaded version should be magnitudes faster than both. In reality, there was not much difference in terms of speed 
+between any of them. This (I think) is a direct consequence of the auxilary arrays in the count sort algorthm embedded within all three; the memory store is the bottleneck. Even 
+with efficient explotation of cache memory, this will not mitigate the issue. This exercise ultimately served to demonstate how a simple 256 long array can hamstring an entire chain of reasoning.
 <br>
-What I appreciate the most is breaking above the layman level of understanding when it comes to programming; I hope to no longer 
-be forced to seek help in understanding a topic and settling for a reply like "Concurrency is two lines of customers ordering from a s
-ingle cashier", or other weird analogies involving passports or phonelines or even Rob Pike's own gofers. Just knowing that threads
-are logical control flows running within a single process with their own context is enough to make all the above seem like almost gibberish.
-<br>
-Some notes, practice problem solutions and the labs can be found here:<a href="https://github.com/Adhamkmopp/cmu-comp-systems">https://github.com/Adhamkmopp/cmu-comp-systems</a></p> 
+
+The code and the program can be found here:<a href="https://github.com/Adhamkmopp/Burrows-Wheeler">https://github.com/Adhamkmopp/Burrows-Wheeler</a></p>. It takes a simple text file as input,
+and outputs the transformed text for each of the three different passes. Some additional notes are included in the link as well.
 </body>
 </html>
