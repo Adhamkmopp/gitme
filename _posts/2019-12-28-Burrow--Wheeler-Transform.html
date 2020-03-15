@@ -1,0 +1,53 @@
+---
+layout: coffee
+title:  "The Burrows--Wheeler Algorithm"
+date:   2019-12-28 21:55:13 +0200
+categories: projects
+permalink: :categories/:title
+img: CMU.jpg
+aspw: 2
+asph: 2.05
+style: |
+  .summary {
+  display:inline;
+  background: rgba(0, 0, 0, 0.8);
+  font-size:1.0vw;
+  color:white;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.75vw;
+  left: 0.2vw;
+  }
+  .summary::first-letter {
+  font-family: 'Poiret One', cursive;
+  color: darkorange;
+  float: left;
+  font-size: 4vw;
+  margin: 0 .2em 0 0;
+  }
+description: "<p class=\"summary\" style=\"display: inline-block; font-style: italic;\">\"Determining which combinations of transformations to apply is
+indeed part of the black art of writing fast code\". This was a direct quote from \"Computer System's: A Programmer's Perspective\",
+543 pages in.</p>
+<br>
+---
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+
+<p class="description">At the heart of the Burrows--Wheeler transformation is any basic string sorting algorithm. This is the implementation of two different 
+  string sorting algoirthms, plus one variation to pin down the most efficient one of the three; a least signficant digit suffix sort (LSD), a recursive most signficant digit suffix sort (MSD), 
+  and a multi--threaded version of the latter. All three share auxilary arrays for implementing a simple count sort. MSD differs from LSD in that it is recursive,
+  and adjacent recursive calls at each level of recursion are indepedent of one another, allowing for multithreading.
+<br>
+In theory, the recursive MSD algorithm is faster than LSD, and the multithreaded version should be magnitudes faster than both. In reality, there was not much difference in terms of speed 
+between any of them. This (I think) is a direct consequence of the auxilary arrays in the count sort algorthm embedded within all three; the memory store is the bottleneck. Even 
+with efficient explotation of cache memory, this will not mitigate the issue. This exercise ultimately served to demonstate how a simple 256 long array can hamstring an entire chain of reasoning.
+<br>
+
+The code and the program can be found here:<a href="https://github.com/Adhamkmopp/Burrows-Wheeler">https://github.com/Adhamkmopp/Burrows-Wheeler</a></p>. It takes a simple text file as input,
+and outputs the transformed text for each of the three different passes. Some additional notes are included in the link as well.
+</body>
+</html>
