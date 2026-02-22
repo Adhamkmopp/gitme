@@ -3,24 +3,30 @@
 <head>
   <meta charset="utf-8">
   <style>
-
     .git {
       background-image: url(/gitme/assets/images/git.png);
       position: relative;
       display: inline-block;
       background-size: contain;
-      width: 2.5vw;
-      height: 2.5vw;
+      /* Modern responsive sizing: min 20px, preferred 2.5vw, max 60px */
+      width: clamp(20px, 2.5vw, 60px);
+      height: clamp(20px, 2.5vw, 60px);
+    }
 
-
+    /* Make footer responsive on mobile */
+    @media (max-width: 600px) {
+      .git {
+        width: clamp(16px, 3vw, 40px);
+        height: clamp(16px, 3vw, 40px);
+      }
     }
   </style>
 </head>
 
 <body>
 
-<div style="width:100%;text-align:center;">
-<a class="git" href="https://github.com/Adhamkmopp"></a>
+<div style="width:100%; text-align:center;">
+  <a class="git" href="https://github.com/Adhamkmopp"></a>
 </div>
 <br>
 
@@ -28,8 +34,6 @@
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
   <div class="wrapper">
-
-
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
@@ -47,18 +51,13 @@
         </ul>
       </div>
 
-
-
       <div class="footer-col footer-col-3">
         <p>{{- site.description | escape -}}</p>
       </div>
     </div>
-
   </div>
 
 </div>
-
-
 
 </body>
 </html>
